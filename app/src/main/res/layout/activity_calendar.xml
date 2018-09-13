@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".CalendarActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@mipmap/bizhi"
+        >
+        <LinearLayout
+            android:id="@+id/l1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <Button
+                android:id="@+id/b1"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:background="@mipmap/ic_abcd"/>
+            <TextView
+                android:id="@+id/t1"
+                android:layout_marginLeft="60dp"
+                android:textColor="#7777ff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <Button
+                android:id="@+id/b2"
+                android:layout_marginLeft="40dp"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:background="@mipmap/ic_abcdef"/>
+        </LinearLayout>
+        <android.support.v7.widget.CardView
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:id="@+id/cv_item2"
+            android:layout_below="@+id/l1"
+            card_view:cardCornerRadius="4dp">
+            <GridLayout
+                android:id="@+id/g1"
+                android:columnCount="7"
+                android:rowCount="7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </GridLayout>
+
+        </android.support.v7.widget.CardView>
+
+    </RelativeLayout>
+
+</LinearLayout>

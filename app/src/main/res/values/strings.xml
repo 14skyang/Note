@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Note</string>
+    <string name="action_settings">Settings</string>
+    <string name="about"><![CDATA[
+
+        这是一个记事本demo,可以实时记事，查看日历等
+
+    ]]></string>
+</resources>
